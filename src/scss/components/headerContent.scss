@@ -1,0 +1,21 @@
+@import '../vendors/var.scss';
+.headerContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    .headerBtn {
+        cursor: pointer;
+        transition: $transition;
+        .headerBtnIco {
+            font-size: 50px;
+        }
+        &:hover {
+            color: $colorBtnHover;
+            
+        }
+    }
+    .headerBtn-clicked {
+        transform: rotate(90deg);
+    }
+}
