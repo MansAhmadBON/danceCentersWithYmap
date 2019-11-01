@@ -55,7 +55,6 @@ function watch(){
     gulp.watch('./src/scss/**/*.scss', style)
     gulp.watch('./src/js/*.js', scripts)
     gulp.watch('./build/*.html').on('change', browserSync.reload)
-    
 }
 
 exports.img = img;
