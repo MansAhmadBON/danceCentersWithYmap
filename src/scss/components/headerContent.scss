@@ -1,9 +1,15 @@
 @import '../vendors/vars.scss';
 .headerContent {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    text-align: center;
     height: 100%;
+    &__column-left {
+        width: 70%;
+    }
+    &__column-right {
+        width: 30%;
+    }
     .headerBtn {
         cursor: pointer;
         transition: $transition;
