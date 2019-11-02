@@ -1,7 +1,21 @@
 .contentItem {
     display: none;
     height: 100%;
+    overflow: hidden;
     background-color: $contentItemBgColor;
+    padding: 20px;
+    padding-bottom: 0px;
+    &__text {
+        margin-top: 10px;
+    }
+    &__text-adress {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+    .wrapContent {
+        width: 650px;
+        margin: 0 auto;
+    }
 }
 
 .contentItem-active {
