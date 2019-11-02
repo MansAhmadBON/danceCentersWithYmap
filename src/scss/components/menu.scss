@@ -1,0 +1,19 @@
+@import '../vendors/vars.scss';
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+    &__item {
+        font-family: $FontSecondary;
+        font-size: $fontSizeSecondary;
+        text-transform: uppercase;
+        color: $colorTextSecondary;
+        cursor: pointer;
+        transition: $transition;
+        &:hover {
+            color: $bgColorSecondary;
+        }
+    }
+}

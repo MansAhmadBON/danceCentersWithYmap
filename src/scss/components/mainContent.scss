@@ -1,0 +1,27 @@
+@import '../vendors/vars.scss';
+
+.mainContent {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    &__column {
+        text-align: center;
+        height: 100%;
+    }
+    &__column-left {
+        width: 70%;
+        background-color: $bgColorMain;
+    }
+    &__column-right {
+        width: 30%;
+        background-color: $colorBtnHover;
+        display: flex;
+        align-items: center;
+    }
+}
