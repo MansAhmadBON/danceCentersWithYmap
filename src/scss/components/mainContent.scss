@@ -1,7 +1,7 @@
 @import '../vendors/vars.scss';
 
 .mainContent {
-    display: flex;
+    display: none;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -24,4 +24,9 @@
         display: flex;
         align-items: center;
     }
+}
+
+.mainContent-active {
+    transition: $transition;
+    display: flex;
 }
