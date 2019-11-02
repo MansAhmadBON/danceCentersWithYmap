@@ -1,0 +1,9 @@
+.contentItem {
+    display: none;
+    height: 100%;
+    background-color: $contentItemBgColor;
+}
+
+.contentItem-active {
+    display: block;
+}
