@@ -1,0 +1,98 @@
+.item {
+    position: relative;
+    display: none;
+    animation: .5s ease-in-out;
+}
+
+.item-active, .item-next {
+    display: block;
+}
+
+.item-next {
+    width: 100%;
+    height: 100%;
+}
+
+.item__img {
+    width: 100px;
+    height: 87px;
+}
+
+.carousel {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.ctrl {
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(20, 20, 20);
+    opacity: .5;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+
+.ctrl-left {
+    order: 0;
+    margin-right: 10px;
+    position: absolute;
+    top: 50%;
+}
+
+.carousel__itemContainer {
+    position: relative;
+    overflow: hidden;
+    order: 1;
+    width: 46%;
+    margin: 0 auto;
+}
+
+.ctrl-right {
+    order: 2;
+    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+
+
+
+/*анимация*/
+.to-left {
+    animation-name: left;
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+.from-right {
+    animation-name: right;
+}
+
+@keyframes left {
+    from {
+        left: 0;
+    } to {
+        left: -100%;
+    }
+}
+
+@keyframes right {
+    from {
+        left: 100%;
+    } to {
+        left: 0%;
+    }
+}
