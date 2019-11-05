@@ -23,5 +23,6 @@
     }
     .headerBtn-clicked {
         transform: rotate(90deg);
+        color: $colorBtnHover;
     }
 }

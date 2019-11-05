@@ -1,23 +1,27 @@
+@import '../vendors/vars.scss';
 .contentItem {
     display: none;
     height: 100%;
     overflow: hidden;
-    background-color: $contentItemBgColor;
-    padding: 20px;
-    padding-bottom: 0px;
-    &__text {
-        margin-top: 10px;
+    flex-direction: row;
+    background-color: $colorBtnHover;
+    color: $bgColorSecondary;
+    .contentItemColumn {
+        height: 100%;
+        display: flex;
     }
-    &__text-adress {
-        display: inline-block;
-        margin-bottom: 15px;
+    .contentItemColumn-left {
+        width: 30%;
+        padding: 10px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-around;
     }
-    .wrapContent {
-        width: 650px;
-        margin: 0 auto;
+    .contentItemColumn-right {
+        width: 70%;
     }
 }
 
 .contentItem-active {
-    display: block;
+    display: flex;
 }

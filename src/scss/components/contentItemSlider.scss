@@ -1,0 +1,133 @@
+@import '../vendors/vars.scss';
+.contentItemSlider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__item {
+        flex-basis: 25%;
+        height: 100%;
+        background-size: cover;
+        transition: $transition;
+        &:hover {
+            flex-basis: 80%;
+        }
+    }
+    .contentItemSlider__item-bizon1 {
+        background-image: url(../assets/img/img/biz1.jpg);
+    }
+    .contentItemSlider__item-bizon2 {
+        background-image: url(../assets/img/img/biz2.jpg);
+    }
+    .contentItemSlider__item-bizon3 {
+        background-image: url(../assets/img/img/biz3.jpg);
+        background-position-x: -200px;
+    }
+    .contentItemSlider__item-bizon4 {
+        background-image: url(../assets/img/img/biz4.jpg);
+    }
+}
+
+.contentItemSlider__item-larry1 {
+    background-image: url(../assets/img/img/larr1.jpg);
+    background-position-x: -200px;
+}
+
+.contentItemSlider__item-larry2 {
+    background-image: url(../assets/img/img/larr2.jpg);
+}
+
+.contentItemSlider__item-larry3 {
+    background-image: url(../assets/img/img/larr3.jpg);
+    background-position-x: -200px;
+}
+
+.contentItemSlider__item-larry4 {
+    background-image: url(../assets/img/img/larr4.jpg);
+    background-position-x: -200px;
+}
+
+.contentItemSlider__item-gato1 {
+    background-image: url(../assets/img/img/gato1.jpg);
+    background-position-x: -200px;
+}
+
+.contentItemSlider__item-gato2 {
+    background-image: url(../assets/img/img/gato2.jpg);
+    background-position-x: -200px;
+}
+
+.contentItemSlider__item-gato3 {
+    background-image: url(../assets/img/img/gato3.jpg);
+    background-position-x: -200px;
+}
+
+.contentItemSlider__item-gato4 {
+    background-image: url(../assets/img/img/gato4.jpg);
+    background-position-x: -200px;
+}
+
+.contentItemSlider__item-fly1 {
+    background-image: url(../assets/img/img/fly1.jpg);
+}
+
+.contentItemSlider__item-fly2 {
+    background-image: url(../assets/img/img/fly2.jpg);
+}
+
+.contentItemSlider__item-fly3 {
+    background-image: url(../assets/img/img/fly3.jpg);
+}
+
+.contentItemSlider__item-fly4 {
+    background-image: url(../assets/img/img/fly4.jpg);
+}
+
+
+.contentItemSlider__item-cyb1 {
+    background-image: url(../assets/img/img/cyb1.jpg);
+}
+
+.contentItemSlider__item-cyb2 {
+    background-image: url(../assets/img/img/cyb2.jpg);
+    background-position-x: -200px;
+}
+
+.contentItemSlider__item-cyb3 {
+    background-image: url(../assets/img/img/cyb3.jpg);
+}
+
+.contentItemSlider__item-cyb4 {
+    background-image: url(../assets/img/img/cyb4.jpg);
+    background-position-x: -200px;
+}
+
+.contentItemSlider__item-mi1 {
+    background-image: url(../assets/img/img/mi1.jpg);
+    background-position-x: -100px;
+}
+
+.contentItemSlider__item-mi2 {
+    background-image: url(../assets/img/img/mi2.jpg);
+}
+
+.contentItemSlider__item-mi3 {
+    background-image: url(../assets/img/img/mi3.jpg);
+    background-position-x: -200px;
+}
+
+.contentItemSlider__item-mi4 {
+    background-image: url(../assets/img/img/mi4.jpg);
+    background-position-x: -200px;
+}
+
+
+
+
+
+
+
+
+
+
