@@ -15,6 +15,9 @@
         &:hover {
             color: $bgColorSecondary;
         }
+        @media (max-width: 600px) {
+            font-size: $fontSizeLiMediaS;
+        }
     }
 }
 

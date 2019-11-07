@@ -14,8 +14,12 @@
 }
 
 .item__img {
-    width: 100px;
+    width: 140px;
     height: 87px;
+    @media (max-width: 500px) {
+        width: 110px;
+        height: 96px;
+    }
 }
 
 .carousel {
@@ -25,6 +29,8 @@
 }
 
 .ctrl {
+    height: 50%;
+    padding-top: 10%;
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
@@ -47,7 +53,6 @@
     position: relative;
     overflow: hidden;
     order: 1;
-    width: 46%;
     margin: 0 auto;
 }
 
