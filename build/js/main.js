@@ -54,6 +54,8 @@ window.onload = function(){
                 center: [53.90163084953277,27.55469060443041],
                 zoom: 12
             });
+            const DanceCentersCollection = new ymaps.GeoObjectCollection()
+
             const placeMarkBizon = new ymaps.Placemark([53.91153482865195,27.452755873890148], {
                 balloonContentHeader: '<h4 style="color: blue">Bizon</h4>',
                 balloonContentBody: `
@@ -82,6 +84,8 @@ window.onload = function(){
                                         </div>
                                     `,
                 hintContent: 'Bizon dance center'
+            },{
+                preset: 'islands#redIcon'
             })
             const placeMarkLarr = new ymaps.Placemark([53.91439155699342,27.590531535508568], {
                 balloonContentHeader: '<h4 style="color: blue">ETAZHLARRY</h4>',
@@ -111,6 +115,8 @@ window.onload = function(){
                                         </div>
                                     `,
                 hintContent: 'ETAZHLARRY dance center'
+            },{
+                preset: 'islands#redIcon'
             })
             const placeMarkMi = new ymaps.Placemark([53.85924533040106,27.481957883633836], {
                 balloonContentHeader: '<h4 style="color: blue">MIAMI DC</h4>',
@@ -140,6 +146,8 @@ window.onload = function(){
                                         </div>
                                     `,
                 hintContent: 'MIAMI DC dance center'
+            }, {
+                preset: 'islands#redIcon'
             });
             const placeMarkFly = new ymaps.Placemark([53.874304400815056,27.50309959358711], {
                 balloonContentHeader: '<h4 style="color: blue">FLYING STARS</h4>',
@@ -169,6 +177,8 @@ window.onload = function(){
                                         </div>
                                     `,
                 hintContent: 'FLYING STARS dance center'
+            },{
+                preset: 'islands#redIcon'
             });
             const placeMarkGato = new ymaps.Placemark([53.89486648663683,27.576812061734365], {
                 balloonContentHeader: '<h4 style="color: blue">EL GATO</h4>',
@@ -198,6 +208,8 @@ window.onload = function(){
                                         </div>
                                     `,
                 hintContent: 'EL GATO dance center'
+            },{
+                preset: 'islands#redIcon'
             });
             const placeMarkCyb = new ymaps.Placemark([53.88445780143119,27.58717133016717], {
                 balloonContentHeader: '<h4 style="color: blue">Cybers</h4>',
@@ -227,15 +239,18 @@ window.onload = function(){
                                         </div>
                                     `,
                 hintContent: 'Cybers dance center'
+            },{
+                preset: 'islands#redIcon'
             });
-            myMap.geoObjects.add(placeMarkBizon);
-            myMap.geoObjects.add(placeMarkLarr);
-            myMap.geoObjects.add(placeMarkMi);
-            myMap.geoObjects.add(placeMarkFly);
-            myMap.geoObjects.add(placeMarkGato);
-            myMap.geoObjects.add(placeMarkCyb);
 
+            DanceCentersCollection.add(placeMarkBizon)
+                                  .add(placeMarkLarr)
+                                  .add(placeMarkMi)
+                                  .add(placeMarkFly)
+                                  .add(placeMarkGato)
+                                  .add(placeMarkCyb);
 
+            myMap.geoObjects.add(DanceCentersCollection);
 
 
             //анимация слайдера
